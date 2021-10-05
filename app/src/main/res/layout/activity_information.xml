@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/info1"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/application_from_outside"
+                    android:padding="15dp"
+                    android:src="@drawable/application_from_outside" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/info2"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:src="@drawable/splash_screen_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="You will see this when the application will be stable."
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:src="@drawable/levels_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Open level 1 and you will see something like this."
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/questions_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="For a correct option selected within the time, 'CORRECT ANSWER' will be displayed, the time left will be added to the score of the current level and the option you have selected will turn 'GREEN'. Next button will appear."
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/correct_answer_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="For a wrong option selected, 'WRONG ANSWER' will be displayed, the option you have selected will turn 'RED' and the correct option will turn 'GREEN'. Next button will appear."
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/wrong_answer_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="For not selecting any option within the time, 'TIME UP!' will be displayed, all the options will turn 'YELLOW' except the correct option which will turn 'GREEN'. Next button will appear."
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/time_up_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="You can view your score at each level and the total score of all the levels by clicking the more options at the top right corner and going to 'scores' part"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/more_options_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="The 'scores' window will look something like this."
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/scores_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="You have to get a minimum score at each level to move to the next level. If you try to go to the next level without getting the minimum score then this will be shown:"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:padding="15dp"
+                    android:src="@drawable/alert_message_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '100' to move from LEVEL 1 to LEVEL 2"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '80' to move from LEVEL 2 to LEVEL 3"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '120' to move from LEVEL 3 to LEVEL 4"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '80' to move from LEVEL 4 to LEVEL 5"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '100' to move from LEVEL 5 to LEVEL 6"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '100' to move from LEVEL 6 to LEVEL 7"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '150' to move from LEVEL 7 to LEVEL 8"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '90' to move from LEVEL 8 to LEVEL 9"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="You will have to get minimum score of '150' to move from LEVEL 9 to LEVEL 10"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

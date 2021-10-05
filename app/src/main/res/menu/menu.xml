@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_more"
+        android:title="more options"
+        android:titleCondensed="@style/ToolbarTheme"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/info"
+                android:icon="@drawable/ic_info"
+                android:title="information"
+                app:showAsAction="withText" />
+
+            <item
+                android:id="@+id/allScores"
+                android:icon="@drawable/ic_score"
+                android:title="scores"
+                app:showAsAction="withText" />
+        </menu>
+    </item>
+
+</menu>

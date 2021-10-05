@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Scores">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_button_main_activity"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/totalScore_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score: "
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totalScore_text">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/totalScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 1"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level1_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 2"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level2_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 3"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level3_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 4"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level4_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 5"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level5_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 6"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level6_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 7"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level7_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 8"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level8_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 9"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level9_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="46dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/custom_button_main_activity"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:text="Level 10"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/level10_Score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOT REACHED"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HUMAN CALCULATOR</string>
+    <string name="random_facts">RANDOM\nFACTS</string>
+    <string name="games">GAMES</string>
+    <string name="others">OTHERS</string>
+    <string name="fast_math">FAST MATH</string>
+    <string name="option_3">option 3</string>
+    <string name="option_2">option 2</string>
+    <string name="option_4">option 4</string>
+    <string name="option_1">option 1</string>
+    <string name="question">question</string>
+    <string name="next">next</string>
+    <string name="score_0">Score: 0</string>
+    <string name="correct_answer">CORRECT ANSWER</string>
+    <string name="wrong_answer">WRONG ANSWER</string>
+    <string name="correct_wrong_answer">correct_wrong_answer</string>
+    <string name="timer">00</string>
+    <string name="score">Score:</string>
+    <string name="alertMessageString">You don\'t have required score in the previous level to open this level. To know the minimum score required go to information under more options.</string>
+    <string name="info1">Our application will look like this in a mobile screen.</string>
+    <string name="application_from_outside">application_from_outside</string>
+    <string name="info2">You will see this when you open the application.</string>
+
+</resources>
